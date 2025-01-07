@@ -1,0 +1,16 @@
+<launch>
+  
+    <!-- Launch Gazebo  -->
+    <include file="$(find levirobotarm_gazebo)/launch/levirobotarm_gazebo_world.launch" />
+
+    <!-- ros_control arm launch file -->
+    <include file="$(find levirobotarm_gazebo)/launch/levirobotarm_states.launch" />   
+
+    <!-- ros_control trajectory control dof arm launch file -->
+    <include file="$(find levirobotarm_gazebo)/launch/levirobotarm_trajectory_controller.launch" />
+
+    <!-- moveit launch file -->
+    <include file="$(find levirobotarm_moveit_config)/launch/levirobotarm_moveit_planning_execution.launch" />
+
+</launch>
+

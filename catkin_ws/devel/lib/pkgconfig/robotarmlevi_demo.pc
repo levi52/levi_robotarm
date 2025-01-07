@@ -1,0 +1,8 @@
+prefix=/home/levi/catkin_ws/devel
+
+Name: robotarmlevi_demo
+Description: Description of robotarmlevi_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy moveit_core moveit_ros_planning_interface

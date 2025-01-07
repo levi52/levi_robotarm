@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: levirobotarm
+    relative_path: urdf/levirobotarm.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/levirobotarm.srdf
+  CONFIG:
+    author_name: levi
+    author_email: hillviolet153@163.com
+    generated_timestamp: 1729325132

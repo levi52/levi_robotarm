@@ -1,0 +1,8 @@
+prefix=/home/levi/catkin_ws/install
+
+Name: levirobotarm
+Description: Description of levirobotarm
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

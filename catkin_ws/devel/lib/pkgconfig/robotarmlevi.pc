@@ -1,0 +1,8 @@
+prefix=/home/levi/catkin_ws/devel
+
+Name: robotarmlevi
+Description: Description of robotarmlevi
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/levi/catkin_ws/devel
+
+Name: levirobotarm_config
+Description: Description of levirobotarm_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

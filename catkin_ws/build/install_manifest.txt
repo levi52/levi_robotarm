@@ -1,0 +1,9 @@
+/home/levi/catkin_ws/install/_setup_util.py
+/home/levi/catkin_ws/install/env.sh
+/home/levi/catkin_ws/install/setup.bash
+/home/levi/catkin_ws/install/local_setup.bash
+/home/levi/catkin_ws/install/setup.sh
+/home/levi/catkin_ws/install/local_setup.sh
+/home/levi/catkin_ws/install/setup.zsh
+/home/levi/catkin_ws/install/local_setup.zsh
+/home/levi/catkin_ws/install/.rosinstall

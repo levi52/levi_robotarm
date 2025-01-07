@@ -1,0 +1,8 @@
+prefix=/home/levi/catkin_ws/devel
+
+Name: robotarmlevi_gazebo
+Description: Description of robotarmlevi_gazebo
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
