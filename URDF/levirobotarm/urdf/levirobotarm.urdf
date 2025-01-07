@@ -1,0 +1,333 @@
+<robot
+  name="levirobotarm">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.111499999999999 0.0918805537950462 0.0365980539672176"
+        rpy="0 0 0" />
+      <mass
+        value="0.792060175151585" />
+      <inertia
+        ixx="0.0013076342675247"
+        ixy="-8.97895333986391E-18"
+        ixz="-1.52203514280765E-17"
+        iyy="0.00111761218761578"
+        iyz="-0.000342820248372846"
+        izz="0.00132881190431943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.00778060331848167 -0.0388119024395769 0.0619552439372352"
+        rpy="0 0 0" />
+      <mass
+        value="1.04655477080608" />
+      <inertia
+        ixx="0.00264329254731864"
+        ixy="5.70633623097027E-05"
+        ixz="-6.95693969709212E-06"
+        iyy="0.00208167589036309"
+        iyz="-0.000196266573814687"
+        izz="0.00409588004887447" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="-0.1115 0.115 0.086005"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.144331724921429 0.0620422166073908 -0.0779934196333835"
+        rpy="0 0 0" />
+      <mass
+        value="0.531203771938411" />
+      <inertia
+        ixx="0.00122938615376849"
+        ixy="-0.000346796110662339"
+        ixz="-1.6458733902766E-08"
+        iyy="0.00188705746255455"
+        iyz="-7.03899710018327E-09"
+        izz="0.00131541594121927" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.078 0 0.07"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.0286035795024245 -6.58131857203535E-17 0.059028829051864"
+        rpy="0 0 0" />
+      <mass
+        value="0.379133571775174" />
+      <inertia
+        ixx="0.000671797019635284"
+        ixy="3.95754096441745E-19"
+        ixz="-1.85347264554722E-05"
+        iyy="0.000383967297370977"
+        iyz="1.59423350914239E-07"
+        izz="0.000477140696400217" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.19055 0.081915 -0.078"
+      rpy="-1.5708 0 -1.1648" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.00582902777519212 0.0115042950844536 0.0441999977693665"
+        rpy="0 0 0" />
+      <mass
+        value="0.0837981737399041" />
+      <inertia
+        ixx="0.000104527966848907"
+        ixy="-1.00176639544185E-06"
+        ixz="-1.10203944909808E-13"
+        iyy="0.000103674147527145"
+        iyz="5.70452791713483E-13"
+        izz="1.42900509120717E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.0442 0.14258"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.000515168829007373 -3.74608036221751E-05 0.0234320257659483"
+        rpy="0 0 0" />
+      <mass
+        value="0.151976721347698" />
+      <inertia
+        ixx="6.07618477860771E-05"
+        ixy="-3.08086232724208E-08"
+        ixz="-2.0131412308689E-06"
+        iyy="6.11827646702985E-05"
+        iyz="-1.46523307260354E-07"
+        izz="4.25402996458265E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://levirobotarm/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0.013418 0.024576 0.0442"
+      rpy="-1.5708 0 2.6418" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+</robot>
